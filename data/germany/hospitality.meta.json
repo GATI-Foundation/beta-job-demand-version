@@ -1,0 +1,11 @@
+{
+ "sector": "hospitality",
+ "total": 26557,
+ "droppedAbroad": 4363,
+ "dateRange": "live on 2026-11-20",
+ "firstPublished": "2012-08-03 to 2026-11-20",
+ "scraped": 26557,
+ "source": "Bundesagentur fuer Arbeit, Jobboerse (Jobsuche API)",
+ "collectedOn": "2026-11-20",
+ "lastUpdated": "2026-11-20T01:23:21.771907"
+}

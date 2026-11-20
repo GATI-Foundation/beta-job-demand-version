@@ -1,0 +1,11 @@
+{
+ "sector": "healthcare",
+ "total": 92321,
+ "droppedAbroad": 3127,
+ "dateRange": "live on 2026-11-20",
+ "firstPublished": "2013-06-11 to 2026-11-20",
+ "scraped": 92321,
+ "source": "Bundesagentur fuer Arbeit, Jobboerse (Jobsuche API)",
+ "collectedOn": "2026-11-20",
+ "lastUpdated": "2026-11-20T01:23:17.748661"
+}

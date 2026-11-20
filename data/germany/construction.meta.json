@@ -1,0 +1,11 @@
+{
+ "sector": "construction",
+ "total": 156670,
+ "droppedAbroad": 6850,
+ "dateRange": "live on 2026-11-20",
+ "firstPublished": "2014-06-20 to 2026-11-20",
+ "scraped": 156670,
+ "source": "Bundesagentur fuer Arbeit, Jobboerse (Jobsuche API)",
+ "collectedOn": "2026-11-20",
+ "lastUpdated": "2026-11-20T01:23:43.676706"
+}

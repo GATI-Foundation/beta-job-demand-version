@@ -1,0 +1,11 @@
+{
+ "sector": "logistics",
+ "total": 79526,
+ "droppedAbroad": 2913,
+ "dateRange": "live on 2026-11-20",
+ "firstPublished": "2014-05-19 to 2026-11-20",
+ "scraped": 79526,
+ "source": "Bundesagentur fuer Arbeit, Jobboerse (Jobsuche API)",
+ "collectedOn": "2026-11-20",
+ "lastUpdated": "2026-11-20T01:23:54.560450"
+}

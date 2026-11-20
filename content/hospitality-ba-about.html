@@ -1,0 +1,28 @@
+<div class="insight-box" style="margin-bottom:16px">
+  <b>What this dashboard covers.</b> Every hospitality job posting live on the Bundesagentur f&uuml;r Arbeit (BA) Jobb&ouml;rse on
+  2026-11-20, taken from the BA occupational fields 293, 632, 633, 634 (KldB 2010). 26,557 postings
+  in Germany are shown (4,363 postings located abroad were left out, because the StepStone dashboards cover Germany only).
+  The layout, columns and charts are the same as the StepStone dashboard so the two can be read side by side.
+</div>
+<div class="grid-2">
+  <div class="card card-t">
+    <div class="card-head">Volumes: StepStone vs BA</div>
+    <table class="data-tbl"><thead><tr><th>Metric</th><th>StepStone, Jun 2026</th><th>BA official, 15 Jun 2026</th><th>BA Jobb&ouml;rse, live</th></tr></thead><tbody><tr><td>Rows / vacancies, all</td><td>7,273</td><td>23,597</td><td>26,557</td></tr><tr><td>ISCO classified</td><td>7,272</td><td>23,597</td><td>26,557</td></tr><tr><td>In sector ISCO scope (14 · 51 · 91 · 94)</td><td>2,412</td><td>19,927</td><td>23,544</td></tr><tr><td>In scope, posted in the last 45 days (StepStone window length)</td><td>2,412</td><td>n/a</td><td>11,133</td></tr><tr><td>Distinct employers</td><td>3,642</td><td>n/a</td><td>11,026</td></tr><tr><td>Distinct ISCO-4 occupations, in scope</td><td>25</td><td>10</td><td>8</td></tr><tr><td>Postings with full text analysed</td><td>7,272</td><td>n/a</td><td>1,050</td></tr></tbody></table>
+  </div>
+  <div class="card card-g">
+    <div class="card-head">Employer Sectors (from Employer_Category)</div>
+    <div class="card-sub">Computed live from the loaded dataset.</div>
+    <div id="about-sector-gloss"><div class="gloss-desc" style="padding:10px 14px">Loading sector list from the data&hellip;</div></div>
+  </div>
+</div>
+<div class="card card-b" style="margin-top:14px">
+  <div class="card-head">Methods &amp; Caveats</div>
+  <div style="font-size:12px;line-height:1.9;padding:0 14px 14px;color:#334">
+    <b>Source.</b> BA Jobsuche interface (rest.arbeitsagentur.de, v6), collected in 10 query slices that add up to the full count for each occupational field. 30,920 of 30,920 listed postings were retrieved (100.0%). The remainder sit behind the interface's 10,000-result limit.<br>
+    <b>Occupation.</b> Each posting carries the BA occupation (<i>hauptberuf</i>). It is matched to the official KldB 2010 title directory and converted to ISCO-08 with the BA crosswalk (primary link). No AI step is involved. <i>ISCO_Source</i> records the route: exact title match, normalised match, or the occupational field's most common code.<br>
+    <b>Employer sector.</b> Agency flags from the BA (temporary staffing, private placement) come first, then employer-name rules, then the BA industry filter (<i>branche</i>), then the employer's other postings. <i>Employer_Category_Confidence_Level</i> drives the "Hide unclear categories" filter as in the StepStone dashboard.<br>
+    <b>Dates.</b> <i>Date_Posted</i> is the first publication date. BA postings stay listed until filled, so dates reach back years. The weekly chart covers the last 26 weeks, and older postings still count in every total.<br>
+    <b>Job titles.</b> German originals, cleaned in the browser like the StepStone titles. Full German text is kept in <i>Title_DE</i> and <i>Description</i> (sampled postings only).<br>
+    <b>Counts.</b> Postings, not vacancies. The official BA vacancy stock (registered vacancies with a placement mandate) is shown alongside for the StepStone month, June 2026.
+  </div>
+</div>
